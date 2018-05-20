@@ -38,8 +38,8 @@ class jenkins {
 
     file {'/etc/systemd/system/jenkins.service':
     ensure   => file,
-    #source  => 'puppet:///modules/jenkins/jenkins.service',
-    source   =>  'file:///etc/jenkins/jenkins.service',
+    source  => 'puppet:///modules/jenkins/jenkins.service',
+    #source   =>  'file:///etc/jenkins/jenkins.service',
 
     }
 

@@ -28,7 +28,7 @@ class jenkins {
       path               => '/etc/sysconfig/jenkins',
       line               => 'JENKINS_PORT="8000"',
       match              => '^JENKINS_PORT=',
-      append_on_no_match => false,
+      append_on_no_match => true,
     }
 
     #Create the service file for the jenkins service
